@@ -1,0 +1,42 @@
+//colors
+$color-primary:  #AA0601;
+$color-secondary: #650300;
+$color-danger: #d32752;
+$color-gray: #707070;
+$color-light: #fff;
+$color-dark: #000;
+$color-red-200: #FBF2F2;
+
+$theme-colors: (
+  primary:   $color-primary,
+  secondary: $color-secondary,
+  danger:    $color-danger,
+  gray:      $color-gray,
+  light:     $color-light,
+  dark:      $color-dark,
+  red-200:   $color-red-200,
+);
+
+//font-size
+$fs-base: 1rem;          //16px
+$fs-1: $fs-base * 4;     //64px
+$fs-2: $fs-base * 3;     //48px
+$fs-3: $fs-base * 2.25;  //36px
+$fs-4: $fs-base * 1.5;   //24px
+$fs-5: $fs-base * 1.25;  //20px
+$fs-6: $fs-base;         //16px
+
+//light-height
+$lh-sm: 1.25;
+$lh-base: 1.5;
+$lh-lg: 2;
+
+//font-weight
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 900;
+
+//font-style
+$font-style-normal: normal;
+$font-style-italic: italic;

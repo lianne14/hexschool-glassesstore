@@ -1,0 +1,25 @@
+.btn-s{
+    background-color: $color-primary;
+    font-size: $fs-4;
+    a{
+        display: inline-block;
+        padding: 4px;
+    }
+    &:hover{
+        background-color: darken($color-primary, 10%);
+    }
+}
+button{
+    a{
+        display: inline-block;
+        width: 100%;
+    }
+    width: 100%;
+    background-color: $color-primary;
+    font-size: $fs-4;
+    padding: 8px 0;
+    border: none;
+    &:hover{
+        background-color: darken($color-primary, 10%);
+    }
+}

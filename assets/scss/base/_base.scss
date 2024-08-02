@@ -1,0 +1,51 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    line-height: $lh-base;
+    font-family: "Noto Sans TC", "Roboto", sans-serif;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+    color: $color-light;
+}
+
+.tac{
+    text-align: center;
+}
+
+// font-size
+h2{
+    font-size: $fs-1;
+}
+h3{
+    font-size: $fs-2;
+}
+h4{
+    font-size: $fs-3;
+}
+h5{
+    font-size: $fs-4;
+}
+h6{
+    font-size: $fs-5;
+}
+@include mobile() {
+    h2,h3,h5{
+        font-size: $fs-4;
+    }
+    h4,h6{
+        font-size: $fs-base;
+    }
+}

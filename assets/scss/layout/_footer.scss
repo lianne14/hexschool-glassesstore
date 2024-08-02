@@ -1,0 +1,37 @@
+footer{
+    padding: 64px 0 32px 0;
+    @include mobile(){
+        padding: 24px 0;
+    }
+    .map{
+        margin-bottom: 32px;
+        width: 420px;
+    }
+    .social-media{
+        width: 180px;
+        img{
+            width: 48px;
+            @include mobile{
+                width: 24px;
+            }
+        }
+    }
+}
+.border-bottom{
+    border-bottom: 1px solid #ffffffc9;
+}
+.phone,.mail{
+    margin-top: 4px;
+    h4,span{
+        font-size: $fs-3;
+        margin-right: 8px;
+    }
+    @include mobile{
+        span{
+            font-size: $fs-5;
+        }
+        h4{
+        font-size: $fs-base;
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.banner{
+  background-image: url(/assets/images/home-header.png);
+  background-position: top center;
+  background-size: cover;
+  .tit{
+    padding: 296px 0;
+    text-align: right;
+    @include mobile () {
+      padding: 144px 0;
+    }
+  } 
+  @include pad () { 
+    background-image: url(/assets/images/home-header-sm.png);
+  } 
+} 
+
+// block2 pro
+.pro{  
+  img{  
+    width: 84px;
+  } 
+}
+
+// block 4 cobrand
+.cobrand{
+  background-image: url(/assets/images/index-bg.png);
+  background-size: cover;
+  background-position: top center;
+  @include pad(){
+   background-image: url(/assets/images/index-bg-md.png);
+   a{
+    display: inline-block;
+    width: 88%;
+    margin-bottom: 24px;
+   }
+  }
+  @include mobile(){
+    background-image: url(/assets/images/index-bg-sm.png);
+  }
+  .card{
+    &-row{
+      padding: 0 12px;
+    }
+    &-column-2{
+      width: calc(100% / 2);
+      @include pad(){
+        width: 100%;
+      }
+    }
+  }
+}
+
+// classic
+.classic{
+  .card{
+    margin-bottom: 16px;
+    &-column-3{
+    width: calc(100% / 3);
+    padding: 0 12px;
+    @include pad(){
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include mobile(){ 
+      width: 90%;
+    } 
+   }  
+  } 
+}
+
+// recom
+.recom{
+  li{
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+  }
+  ul{
+    margin-bottom: 16px;
+  }
+  time{
+    margin-top: auto;
+    color: $color-gray;
+  }
+  .card-column-4{
+    width: calc(100% / 4);
+    padding: 0 12px;
+    @include pad() {
+      width: calc(100% / 2);
+    }
+    @include mobile(){
+      width: 90%;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+  }
+}
+
+//contact
+.contact{
+  .from{
+    width: 50%;
+    @include pad(){
+      width: 80%;
+    }
+    @include mobile(){
+      width: 100%;
+    }
+  }
+  label{
+    width: 100%;
+    display: inline-block;
+  }
+  input{
+    width: 100%;
+    background-color: #FBF2F2;
+    border: 1px solid;
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  .checkbox input{
+    width: 24px;
+  }
+}
