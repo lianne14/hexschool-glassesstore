@@ -21,6 +21,7 @@
         display: none;
     }
 }
+
 .fd-column{
     flex-direction: column;
 }
@@ -43,7 +44,12 @@
 .card-p-s{
     padding: 16px;
 }
-
+.mx-s{
+    margin: 8px;
+}
+.ml-s{
+    margin-left: 8px;
+}
 // block space
 section{
     padding: 80px 0;
@@ -54,13 +60,28 @@ section{
     font-weight: $font-weight-semibold;
     margin-bottom: 48px;
 }
-
-
+.page-tittle{
+    color: $color-dark;
+    font-weight: 600;
+    position: relative;
+    padding-left:20px
+}
+.page-tittle:after {
+    content: "";
+    position: absolute;
+    background: $color-primary;
+    height: 70%;
+    width: 8px;
+    top: 14px;
+    left: 2px;
+    @include mobile{
+        top: 8px;
+    }
+}
 // font-style
 .i{
     font-style: $font-style-italic;
 }
-
 // font-weight
 .fw-s{
     font-weight: $font-weight-light;
@@ -78,6 +99,9 @@ section{
 // color
 .c-light{
     color: $color-light;
+}
+.c-gray{
+    color: $color-gray;
 }
 .c-primary{
     color: $color-primary;
